@@ -1,2 +1,3 @@
 # mgrs_tiles_snow_area
 this repo contains a geoparquet (mgrs_land_tiles_snow_area.parquet) of mgrs land tiles with snow area in each tile. mgrs land tiles were obtained from scott's awesome repo here: https://github.com/scottyhq/mgrs/tree/main, and seasonal and ephemeral snow (from mountain and non mountain) from https://nsidc.org/data/nsidc-0768/versions/1. I used qgis to import both rasters and reproject to an equal area projection, used zonal statistics to count the number of seasonal and ephemeral snow pixels (values 2 and 3 in the raster) in each mgrs tile, and then multiplied by pixel area to get snow area in each tile. 
+info on tiling system here: https://hls.gsfc.nasa.gov/products-description/tiling-system/
